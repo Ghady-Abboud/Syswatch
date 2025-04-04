@@ -7,7 +7,7 @@ import os
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from core.system_monitor import get_cpu_usage, get_memory_usage
+from core.system_monitor import get_cpu_usage, get_memory_usage,get_cpu_load_average
 
 class TestSystemMonitor(unittest.TestCase):
 
@@ -23,3 +23,7 @@ class TestSystemMonitor(unittest.TestCase):
 
     def test_get_memory_usage(self):
         self._assert_usage_value(get_memory_usage)
+
+    def test_get_cpu_load_average(self):
+        cpu_load_average = get_cpu_load_average()
+        self.assertIsInstance(cpu_load_average,tuple)

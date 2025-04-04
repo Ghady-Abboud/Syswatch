@@ -8,3 +8,6 @@ def get_cpu_usage():
 def get_memory_usage():
     memory = psutil.virtual_memory()
     return memory.percent
+
+def get_cpu_load_average():
+    return psutil.getloadavg()
