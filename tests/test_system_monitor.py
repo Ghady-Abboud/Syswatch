@@ -1,5 +1,4 @@
 import unittest
-from unittest.mock import patch
 import sys
 import os
 
@@ -27,3 +26,4 @@ class TestSystemMonitor(unittest.TestCase):
     def test_get_cpu_load_average(self):
         cpu_load_average = get_cpu_load_average()
         self.assertIsInstance(cpu_load_average,tuple)
+        self.assertIsInstance(cpu_load_average[0],float)
