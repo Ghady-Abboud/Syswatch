@@ -5,13 +5,7 @@ from logger import log_system_stats
 app = typer.Typer()
 
 @app.command()
-def logCurrentStats():
-    log_system_stats()
-    print("System stats logged")
-
-@app.command()
-def watch(interval: int = 1):
-    print(f"Logging system stats...")
+def monitor_resources(interval: int = 1):
     while (True):
         log_system_stats() 
         time.sleep(interval)

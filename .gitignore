@@ -1,3 +1,5 @@
 /.env*
 /venv
 /__pycache*
+/core/__pycache__
+/tests/__pycache__
