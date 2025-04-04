@@ -4,9 +4,10 @@ import sys
 import os
 
 
-from core.system_monitor import get_cpu_usage, get_memory_usage
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
+from core.system_monitor import get_cpu_usage, get_memory_usage
 
 class TestSystemMonitor(unittest.TestCase):
 

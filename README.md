@@ -4,3 +4,5 @@ To run certain functions do : "python3 [$filename] [$commandName] [--args]=[] "
 2) "source venv/bin/activate" (if on linux)
 3) pip install -r requirements.txt
 
+To Run tests do the following:
+    - python3 -m unittest discover [testDirName] 
