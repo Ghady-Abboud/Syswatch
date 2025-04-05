@@ -1,4 +1,3 @@
-import psutil
 import csv
 import system_monitor
 from datetime import datetime
